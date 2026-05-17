@@ -1653,9 +1653,10 @@ async def StarTinG():
             break
         except asyncio.TimeoutError: 
             print("Token ExpiRed ! , ResTartinG")
-        except Exception as e: 
-            print(f"ErroR TcP - {e} => ResTarTinG ...")
-
+			import traceback
+            except Exception as e:
+            print(f"FULL ERROR: {e}")
+            traceback.print_exc()
 import pickle
 import os
 import time
